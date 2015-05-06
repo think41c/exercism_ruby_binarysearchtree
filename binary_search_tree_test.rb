@@ -1,5 +1,6 @@
 require 'minitest/autorun'
-require_relative 'binary_search_tree'
+require 'minitest/pride'
+require_relative 'binary_search_tree.rb'
 
 class BstTest < Minitest::Test
   def test_data_is_retained
