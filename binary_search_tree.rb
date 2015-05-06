@@ -1,10 +1,20 @@
 class Bst
   
-  def initialize(x) 
-  
+  def initialize(number) 
+    number = @number
   end
 
   def data
-    4
+    @number
   end
+
+  def left
+  end
+
+  def right
+  end
+
+  def record_all_data
+  end
+
 end
