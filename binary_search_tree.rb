@@ -1,7 +1,7 @@
 class Bst
   
   def initialize(number) 
-    number = @number
+    @number = number
   end
 
   def data
@@ -9,9 +9,11 @@ class Bst
   end
 
   def left
+
   end
 
   def right
+
   end
 
   def record_all_data
