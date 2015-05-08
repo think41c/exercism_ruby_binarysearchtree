@@ -10,7 +10,7 @@ class Bst
   end
 
   def insert(x)
-    if x <= @data
+    if x <= data
       if @left == nil
         @left = Bst.new(x)
       else
