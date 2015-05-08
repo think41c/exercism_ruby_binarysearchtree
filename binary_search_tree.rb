@@ -16,10 +16,21 @@ class Bst
     @right_branch
   end
 
-  def insert
+  def insert(x)
+    if x <= @number
+      @left_branch = Bst.new(x)
+    else
+      @right_branch = Bst.new(x)
+    end
   end
-  
+
   def record_all_data
   end
 
 end
+
+
+a = Bst.new(4)
+a.insert(4)
+    # p four.data
+    # d four.left.data
