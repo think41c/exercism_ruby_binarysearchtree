@@ -1,40 +1,28 @@
 class Bst
-  
-  def initialize(number) 
-    @number = number
+  attr_reader :data, :left, :right
+
+  def initialize(data) 
+    @data = data
   end
 
-  def data
-    @number
-  end
-
-  def left
-    @left_branch
-  end
-
-  def right
-    @right_branch
+  def each(&block)
+    all_data = [4]
   end
 
   def insert(x)
-    if x <= @number
-      if @left_branch == nil
-        @left_branch = Bst.new(x)
+    if x <= @data
+      if @left == nil
+        @left = Bst.new(x)
       else
-        @left_branch.insert(x) 
+        @left.insert(x) 
       end
     
     else
-      if @right_branch == nil
-        @right_branch = Bst.new(x)
+      if @right == nil
+        @right = Bst.new(x)
       else
-        @right_branch.insert(x)
+        @right.insert(x)
       end
     end
   end
-
-  def record_all_data
-    []
-  end
-
 end
