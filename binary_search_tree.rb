@@ -9,13 +9,16 @@ class Bst
   end
 
   def left
-
+    @left_branch
   end
 
   def right
-
+    @right_branch
   end
 
+  def insert
+  end
+  
   def record_all_data
   end
 
