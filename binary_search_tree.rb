@@ -18,9 +18,18 @@ class Bst
 
   def insert(x)
     if x <= @number
-      @left_branch = Bst.new(x)
+      if @left_branch == nil
+        @left_branch = Bst.new(x)
+      else
+        @left_branch.insert(x) 
+      end
+    
     else
-      @right_branch = Bst.new(x)
+      if @right_branch == nil
+        @right_branch = Bst.new(x)
+      else
+        @right_branch.insert(x)
+      end
     end
   end
 
