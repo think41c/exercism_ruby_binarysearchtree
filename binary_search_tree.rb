@@ -34,6 +34,7 @@ class Bst
   end
 
   def record_all_data
+    []
   end
 
 end
