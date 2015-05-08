@@ -11,17 +11,17 @@ class Bst
 
   def insert(x)
     if x <= data
-      if @left == nil
+      if left == nil
         @left = Bst.new(x)
       else
-        @left.insert(x) 
+        left.insert(x) 
       end
     
     else
-      if @right == nil
+      if right == nil
         @right = Bst.new(x)
       else
-        @right.insert(x)
+        right.insert(x)
       end
     end
   end
