@@ -28,9 +28,3 @@ class Bst
   end
 
 end
-
-
-a = Bst.new(4)
-a.insert(4)
-    # p four.data
-    # d four.left.data
