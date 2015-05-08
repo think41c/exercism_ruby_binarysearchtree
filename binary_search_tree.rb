@@ -6,7 +6,9 @@ class Bst
   end
 
   def each(&block)
-    all_data = [4]
+    left && left.each(&block)
+    block.call(data)
+    right && right.each(&block)
   end
 
   def insert(x)
